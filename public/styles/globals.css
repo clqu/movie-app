@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: "Creal";
+  src: url("https://clqu.live/fonts/5fd07762093e40beee85d22757cc6d8d.woff2") format("woff2"),
+    url("https://clqu.live/fonts/5fd07762093e40beee85d22757cc6d8d.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Creal";
+  src: url("https://clqu.live/fonts/f5a1414f8fe9188766b39607d923fbb9.woff2") format("woff2"),
+    url("https://clqu.live/fonts/f5a1414f8fe9188766b39607d923fbb9.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Creal";
+  src: url("https://clqu.live/fonts/3d32e753a2cefc56ce239b04cce45490.woff2") format("woff2"),
+    url("https://clqu.live/fonts/3d32e753a2cefc56ce239b04cce45490.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Creal";
+  src: url("https://clqu.live/fonts/7ab640c091619f9534886523d3cde66f.woff2") format("woff2"),
+    url("https://clqu.live/fonts/7ab640c091619f9534886523d3cde66f.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Creal";
+  src: url("https://clqu.live/fonts/855b722e0240c397005b340b1baf8780.woff2") format("woff2"),
+    url("https://clqu.live/fonts/855b722e0240c397005b340b1baf8780.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: 'Creal', sans-serif;
+}
+
+.hero-image {
+  --gradient-1: #f7fff6;
+  --gradient-2: rgba(94, 94, 94, 0.4);
+  --gradient-4: rgba(0, 0, 0, 0.4);
+  --gradient-3: rgba(6, 2, 4, 0.2);
+
+  background:
+    linear-gradient(0deg,
+      var(--gradient-1),
+      var(--gradient-2),
+      var(--gradient-3),
+      var(--gradient-3)),
+    linear-gradient(180deg,
+      var(--gradient-4),
+      var(--gradient-4)),
+    var(--card-banner);
+  background-size: cover !important;
+  background-repeat: no-repeat;
+}
+
+.movie-card {
+  --gradient-1: rgb(5, 5, 12, .6);
+  --gradient-2: rgba(5, 5, 12, .4);
+  --gradient-3: rgba(5, 5, 12, .5);
+  background: linear-gradient(0deg, var(--gradient-1), var(--gradient-1), var(--gradient-2), var(--gradient-3)), var(--card-banner);
+  background-size: cover;
+  background-position: center;
+}
