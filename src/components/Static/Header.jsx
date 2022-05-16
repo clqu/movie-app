@@ -25,7 +25,7 @@ export default function Header() {
                         Search
                     </a>
                 </Link>
-                <Link href="/login">
+                <Link href="#">
                     <a className="font-medium transition-all duration-200 bg-blue-600/20 text-blue-600 hover:bg-blue-600/30 px-6 rounded-lg py-2">
                         Login
                     </a>
