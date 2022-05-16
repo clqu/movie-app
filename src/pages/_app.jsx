@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps, data }) {
         <Component {...pageProps} />
       </div>
       {router.pathname === '/' && (
-        <div className="hidden lg:block w-[30rem] space-y-4 max-h-screen bg-[#101010]/5 p-4 rounded-xl">
+        <div className="hidden lg:block w-[30rem] space-y-4 bg-[#101010]/5 p-4 rounded-xl">
           {data.slice(0, 7).map((item, index) => (
             index === 0 ? (
               <div className="bg-white rounded-lg">
