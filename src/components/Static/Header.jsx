@@ -15,11 +15,9 @@ export default function Header() {
                 </Link>
             </div>
             <div className="hidden col-span-4 lg:col-span-8 w-full h-4 gap-6 lg:flex items-center justify-end">
-                <Link href="/about">
-                    <a className="font-medium transition-all duration-200 hover:bg-zinc-500/10 px-6 py-2 rounded-lg">
-                        About Us
-                    </a>
-                </Link>
+                <a href="https://github.com/clqu/movie-app" target="_blank" className="font-medium transition-all duration-200 hover:bg-zinc-500/10 px-6 py-2 rounded-lg">
+                   Source Code
+                </a>
                 <Link href="/search">
                     <a className="font-medium transition-all duration-200 hover:bg-zinc-500/10 px-6 py-2 rounded-lg">
                         Search
@@ -48,7 +46,19 @@ export default function Header() {
                 >
                     <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                         <div className="px-1 py-1 ">
+                            <a href="https://github.com/clqu/movie-app" target="_blank">
+                                <Menu.Item>
+                                    {({ active }) => (
 
+                                        <button
+                                            className={`${active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                                        >
+                                            Source Code
+                                        </button>
+                                    )}
+                                </Menu.Item>
+                            </a>
                             <Link href="/about">
                                 <Menu.Item>
                                     {({ active }) => (
