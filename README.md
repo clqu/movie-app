@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/mEtCHLA.png" />
 
-#### [Demo](https://clqu.live)
+#### [Demo](https://movie-app-clqu.vercel.app)
 
 
 
